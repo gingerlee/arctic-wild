@@ -493,6 +493,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   height: 870px;
   background: url("../img/hero-slide1.jpg") center no-repeat;
   background-size: cover;
@@ -548,13 +549,45 @@ header {
     .nav-list a:hover {
       color: #dc7725; }
 
-.nav-content {
-  max-height: 0;
-  overflow: hidden; }
-
-input:checked ~ .nav-content {
-  max-height: 100%;
-  transition: all ease 1s; }
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+  .hero-text a {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative; }
+    .hero-text a img {
+      transform: scale(0.7);
+      position: absolute;
+      top: 19%;
+      left: 30%; }
+  .hero-text span {
+    color: white;
+    margin-bottom: 0;
+    letter-spacing: 3px; }
+  .hero-text h2 {
+    color: white;
+    font-size: 6em;
+    font-family: 'Spectral SC', serif;
+    font-weight: 700;
+    margin: 0; }
+  .hero-text .heading-sep {
+    height: 5px;
+    width: 300px;
+    background: white; }
+  .hero-text button {
+    width: 168px;
+    height: 60px;
+    color: white;
+    background: #dc7725;
+    border: none;
+    border-radius: 4px; }
 
 @media only screen and (max-width: 1150px) {
   .nav {
