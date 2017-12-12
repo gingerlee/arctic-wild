@@ -525,6 +525,37 @@ header {
     .nav ul li {
       padding: 10px; }
 
+.nav-list {
+  padding: 20px; }
+  .nav-list input#menu {
+    display: none; }
+  .nav-list label {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 27px;
+    background: url(../img/menu.png) no-repeat right top; }
+  .nav-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; }
+  .nav-list li {
+    padding-left: 3em; }
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px; }
+    .nav-list a:hover {
+      color: #dc7725; }
+
+.nav-content {
+  max-height: 0;
+  overflow: hidden; }
+
+input:checked ~ .nav-content {
+  max-height: 100%;
+  transition: all ease 1s; }
+
 @media only screen and (max-width: 1150px) {
   .nav {
     justify-content: center; } }
