@@ -40,10 +40,6 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -198,7 +194,8 @@ audio:not([controls]) {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none; }
+  border-style: none;
+  max-width: 100%; }
 
 /**
  * Hide the overflow in IE.
@@ -490,5 +487,49 @@ body {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.wrapper {
+  width: 100%; }
+
+header {
+  display: flex;
+  height: 870px;
+  background: url("../img/hero-slide1.jpg") center no-repeat;
+  background-size: cover;
+  align-items: baseline; }
+
+.nav {
+  display: flex;
+  width: 1100px;
+  margin: 50px auto 0 auto;
+  justify-content: space-between;
+  align-items: baseline; }
+  .nav .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; }
+  .nav a {
+    color: #fff;
+    text-decoration: none; }
+    .nav a:hover {
+      color: #dc7725; }
+  .nav h1 {
+    font-size: 1.1em;
+    margin-left: 10px;
+    width: 250px; }
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.85em; }
+    .nav ul li {
+      padding: 10px; }
+
+@media only screen and (max-width: 1150px) {
+  .nav {
+    justify-content: center; } }
+@media only screen and (max-width: 960px) {
+  .nav {
+    justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,62 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.wrapper {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  // width: 100%;
+  height: 870px;
+  background: url("../img/hero-slide1.jpg") center no-repeat;
+  background-size: cover;
+  align-items: baseline;
+}
+
+.nav {
+  display: flex;
+  width: 1100px;
+  margin: 50px auto 0 auto;
+  justify-content: space-between;
+  align-items: baseline;
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #dc7725;
+    }
+  }
+  h1 {
+    font-size: 1.1em;
+    margin-left: 10px;
+    width: 250px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.85em;
+    li {
+      padding: 10px;
+    }
+  }
+}
+
+@media #{$breakpoint-nav-l} {
+
+  .nav {
+    justify-content: center;
+  }
+}
+@media #{$breakpoint-nav-md} {
+
+  .nav {
+    justify-content: center;
+  }
+}

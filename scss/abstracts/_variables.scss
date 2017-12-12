@@ -53,11 +53,15 @@ $max-width: 1180px !default;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
+// $breakpoints: (
+//   'small': 320px,
+//   'medium': 768px,
+//   'large': 1024px,
+//   'nav-med': 1150px,
+// ) !default;
+
+$breakpoint-nav-l: "only screen and (max-width: 1150px)";
+$breakpoint-nav-md: "only screen and (max-width: 960px)";
 
 
 
