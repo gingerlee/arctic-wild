@@ -43,7 +43,7 @@ header {
     margin: 0;
     font-size: 0.85em;
     li {
-      padding: 10px;
+      padding: 7px;
     }
   }
 }
@@ -65,7 +65,7 @@ header {
     text-align: right;
   }
      li {
-      padding-left: 3em;
+      padding-left: 2.5em;
     }
      a {
       color: #fff;
@@ -186,5 +186,32 @@ header {
 
   .nav {
     justify-content: center;
+  }
+
+  .header {
+    height: 500px !important;
+  }
+
+  .hero-text {
+    span {
+      font-size: 1em;
+    }
+
+    h2 {
+      font-size: 3em;
+    }
+
+    button {
+      display: none;
+    }
+
+    a {
+      margin-bottom: 10px;
+      transform: scale(0.8);
+    }
+
+    li {
+
+    }
   }
 }
